@@ -21,4 +21,13 @@ Push code up from local repo to remote repo
 # Maven Compiler Command
 
 In project root folder 
-> mvnw.cmd clean <br/>
+> mvnw.cmd clean
+
+package the compiled bytecode classes into jar/war file
+> mvnw.cmd package
+
+delete target, redownload dependencies, recompile to class files, package to jar/war 
+> mvnw.cmd clean package
+
+run the application in embedded localhost server
+> mvnw.cmd spring-boot:run
