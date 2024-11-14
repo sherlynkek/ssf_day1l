@@ -1,7 +1,7 @@
 # Git command
 
 In project root folder
-1. git init
+> git init
 
 Add files to staging
 2. git add *
