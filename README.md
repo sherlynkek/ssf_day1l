@@ -4,16 +4,16 @@ In project root folder
 > git init
 
 Add files to staging
-2. git add *
+> git add *
 
 Commit files to local repo
-3. git commit -m "initial commit"
+> git commit -m "initial commit"
 
 Change branch name
-4. git branch -m main
+> git branch -m main
 
 Link up remote repo to local repo 
-5. git remote add origin
+> git remote add origin
 
 Push code up from local repo to remote repo 
-6. git push -u origin main
+> git push -u origin main
