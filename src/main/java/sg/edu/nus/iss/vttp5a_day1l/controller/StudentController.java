@@ -46,8 +46,8 @@ public class StudentController {
         // convert epoch Long to Date
         /* Long epochTime = 188103300000L;
         Date dTime = new Date(epochTime);
-        String formattedDate = sdf.parse(dTime);
-        System.out.println(formattedDate);
+        String formattedTime = sdf.format(dTime);
+        System.out.println(formattedTime);
  */
         return students;
         
