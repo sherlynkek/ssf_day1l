@@ -13,11 +13,10 @@ import org.springframework.web.filter.CommonsRequestLoggingFilter;
 public class Vttp5aDay1lApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(Vttp5aDay1lApplication.class, args);
+		//SpringApplication.run(Vttp5aDay11lApplication.class, args);
 
 		SpringApplication app = new SpringApplication(Vttp5aDay1lApplication.class);
-
-		String port = "4000";
+		String port = "8080";
 		ApplicationArguments argsOptions = new DefaultApplicationArguments(args);
 
 		if(argsOptions.containsOption("port")) {
@@ -30,15 +29,14 @@ public class Vttp5aDay1lApplication {
 		if (argsOptions.containsOption("file")) {
 			dirFile = argsOptions.getOptionValues("file").get(0);
 
-			System.out.println("Directory file: " + dirFile);
+			System.out.println("Directory File: " + dirFile);
 		}
-
 		app.run(args);
 	}
 
+	//Setting up the environment for logging
 	@Bean
 	public CommonsRequestLoggingFilter logging() {
-
 		CommonsRequestLoggingFilter crlf = new CommonsRequestLoggingFilter();
 		crlf.setIncludeClientInfo(true);
 		crlf.setIncludeQueryString(true);
